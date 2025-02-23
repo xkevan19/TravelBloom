@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Denied</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #ff4444;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .vpn-warning {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 20px;
+            border: 2px solid #ff4444;
+            display: inline-block;
+            background-color: #222;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff4444;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="vpn-warning">
+        🚨 VPN Detected!  
+        Our site does not allow access via VPNs.  
+        Please disable your VPN and refresh the page.
+    </div>
+    <a href="index.html" class="btn">Try Again</a>
+</body>
+</html>

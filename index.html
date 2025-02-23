@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TravelBloom</title>
+
+    <!-- Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Web Content -->
+    <script defer src="js/home.js"></script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif !important;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 700;
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(7px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .standard-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 0.75rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body class="bg-[#002A22] text-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="bg-[#02382e] text-[#F7FFF7] fixed w-full top-0 z-50 shadow-xl p-6"></nav>
+
+    <!-- Hero Section -->
+    <header id="hero"
+        class="relative flex flex-col items-start justify-center pl-20 text-white h-screen bg-cover bg-center"></header>
+
+    <!-- Travel Recommendations Section -->
+    <section class="pt-16 pb-8 text-center">
+        <h2 class="text-6xl font-extrabold text-gray-100 mb-8">🏆 Top Travel Recommendations</h2>
+        <!-- Search Bar -->
+        <div class="flex justify-center mb-10">
+            <input type="text" id="searchInput"
+                class="w-1/2 px-5 py-4 text-xl text-black bg-white rounded-full border-2 border-gray-300 shadow-lg outline-none transition duration-300 focus:border-orange-500 focus:ring-4 focus:ring-orange-300"
+                placeholder="🔍 Search destinations or attractions..." oninput="filterRecommendations()">
+        </div>
+    </section>
+
+    <!-- Recommendations Container -->
+    <section id="recommendations" class="py-10 px-10 max-w-6xl mx-auto grid gap-16 mb-20"></section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-[#02382e] text-white py-6 text-center text-lg shadow-md"></footer>
+
+    <!-- No JavaScript -->
+    <script src="js/noscript.js"></script>
+
+    <!-- VPN Blocker -->
+    <script src="js/vpn-detected.js"></script>
+
+</body>
+
+</html>
